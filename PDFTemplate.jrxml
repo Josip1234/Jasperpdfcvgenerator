@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="72bd3300-fd1a-4076-963e-37ac0478c836">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[Y3ZkYXRhYmFzZS5vc29ibmVpbmZvcm1hY2lqZSBBUyAsMjIsMjgsYTdmMTM0YjgtNmQ2ZS00OGI5
+LThiZDctNzEyYjFhNDg5NWI0O2N2ZGF0YWJhc2UuenZhbmplIEFTICwyMzUsNzIsZDA0NWVhOTIt
+MzE3Ny00MzgzLWI4NWQtMmFhYzJiMmE3MGVjOw==]]>
+	</property>
+	<queryString language="SQL">
+		<![CDATA[SELECT cvdatabase.osobneinformacije.`ImePrezime`,
+	cvdatabase.osobneinformacije.`brojMobitela`,
+	cvdatabase.osobneinformacije.`emailAdresa`,
+	cvdatabase.osobneinformacije.adresa,
+	cvdatabase.osobneinformacije.linkovi,
+	cvdatabase.zvanje.`Zvanje`
+FROM cvdatabase.zvanje
+	INNER JOIN cvdatabase.osobneinformacije ON 
+	 cvdatabase.zvanje.`idOsobe` = cvdatabase.osobneinformacije.id]]>
+	</queryString>
+	<field name="ImePrezime" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ImePrezime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobneinformacije"/>
+	</field>
+	<field name="brojMobitela" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="brojMobitela"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobneinformacije"/>
+	</field>
+	<field name="emailAdresa" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="emailAdresa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobneinformacije"/>
+	</field>
+	<field name="adresa" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="adresa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobneinformacije"/>
+	</field>
+	<field name="linkovi" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="linkovi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobneinformacije"/>
+	</field>
+	<field name="Zvanje" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Zvanje"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="zvanje"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="163" y="10" width="114" height="30" forecolor="#1593CB" uuid="bd483d62-da74-484d-bc5b-680e5b5a2e2a">
+					<property name="com.jaspersoft.studio.element.name" value="NASLOV"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="9" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Životopis]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="135" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="0" width="130" height="30" forecolor="#0E4194" uuid="6a1191f9-8587-48bb-966a-60f00ca43428"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[OSOBNE INFORMACIJE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="0" width="100" height="30" uuid="f5cd7205-f03f-4f39-9483-d9320e80a04f"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Arial" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ImePrezime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="30" width="180" height="20" uuid="be1f7ad5-05b5-4c04-8af6-b15ccc9b88fa"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{adresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="50" width="84" height="20" uuid="d80f1b28-a203-4111-a2ba-dc7bb6ee1053"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{brojMobitela}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="70" width="100" height="20" uuid="03fba614-8ea5-42de-b269-d420883fa28a"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emailAdresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="90" width="376" height="20" uuid="07679ba3-3155-45c2-ac35-2412375f1582"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{linkovi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement x="21" y="0" width="114" height="30" forecolor="#0E4194" uuid="f7dc940a-2cc0-4916-adbb-bbfd42bd0433">
+					<property name="com.jaspersoft.studio.element.name" value="ZVANJE"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[ZVANJE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="161" y="6" width="100" height="21" uuid="c21f0408-c27b-41f0-ac1f-3b40bd1e14b8"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Zvanje}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="36" width="116" height="30" forecolor="#0E4194" uuid="fa79c637-e53d-40c8-8821-9b57189973a2">
+					<property name="com.jaspersoft.studio.element.name" value="OBRAZOVANJE"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[OBRAZOVANJE I OSPOSOBLJAVANJE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
