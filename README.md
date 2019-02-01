@@ -1,2 +1,1 @@
 # Jasperpdfcvgenerator
-SELECT osobneinformacije.ImePrezime,osobneinformacije.brojMobitela,osobneinformacije.emailAdresa,osobneinformacije.adresa,osobneinformacije.linkovi,zanimanje.Zvanje,obrazovanje.datumPočetka,obrazovanje.datumZavršetka,obrazovanje.titula,obrazovanje.mjesto,obrazovanje.tehnikeZanimanja,osobnevjestine.materinskiJezik,osobnevjestine.straniJezici,osobnevjestine.slušanje,osobnevjestine.čitanje,osobnevjestine.govornaInterakcija,osobnevjestine.govornaProdukcija,osobnevjestine.pisanje FROM osobneinformacije,zanimanje,obrazovanje,osobnevjestine
