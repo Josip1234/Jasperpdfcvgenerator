@@ -1,4 +1,4 @@
-public class OsobnaVjestina extends OsnovnaInformacija {
+public class OsobnaVjestina  {
     private String materinskiJezik;
     private String straniJezici;
     private String slusanje;
@@ -10,8 +10,8 @@ public class OsobnaVjestina extends OsnovnaInformacija {
     public OsobnaVjestina(){
 
     }
-    public OsobnaVjestina(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, String materinskiJezik, String straniJezici, String slusanje, String citanje, String govornaInterakcija, String govornaProdukcija, String pisanje) {
-        super(imePrezime, adresa, brojMobitela, emailAdresa, linkovi);
+    public OsobnaVjestina( String materinskiJezik, String straniJezici, String slusanje, String citanje, String govornaInterakcija, String govornaProdukcija, String pisanje) {
+
         this.materinskiJezik = materinskiJezik;
         this.straniJezici = straniJezici;
         this.slusanje = slusanje;

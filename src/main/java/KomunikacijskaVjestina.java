@@ -1,11 +1,11 @@
-public class KomunikacijskaVjestina extends OsnovnaInformacija {
+public class KomunikacijskaVjestina {
     private String vjestina;
 
     public KomunikacijskaVjestina() {
     }
 
-    public KomunikacijskaVjestina(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, String vjestina) {
-        super(imePrezime, adresa, brojMobitela, emailAdresa, linkovi);
+    public KomunikacijskaVjestina(String vjestina) {
+
         this.vjestina = vjestina;
     }
 

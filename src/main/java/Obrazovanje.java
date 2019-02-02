@@ -2,7 +2,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Obrazovanje extends OsnovnaInformacija {
+public class Obrazovanje {
     private String datumPocetka;
     private String datumKraja;
     private String titula;
@@ -17,8 +17,8 @@ public class Obrazovanje extends OsnovnaInformacija {
         this.tehnikeZanimanja="";
     }
 
-    public Obrazovanje(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, String datumPocetka, String datumKraja, String titula, String mjesto, String tehnikeZanimanja) {
-        super(imePrezime, adresa, brojMobitela, emailAdresa, linkovi);
+    public Obrazovanje(String datumPocetka, String datumKraja, String titula, String mjesto, String tehnikeZanimanja) {
+
         this.datumPocetka = datumPocetka;
         this.datumKraja = datumKraja;
         this.titula = titula;

@@ -1,4 +1,4 @@
-public class DigitalnaVjestina extends OsnovnaInformacija {
+public class DigitalnaVjestina {
     private String obradaInformacija;
     private String komunikacija;
     private String stvaranjeSadrzaja;
@@ -8,8 +8,8 @@ public class DigitalnaVjestina extends OsnovnaInformacija {
     public DigitalnaVjestina() {
     }
 
-    public DigitalnaVjestina(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, String obradaInformacija, String komunikacija, String stvaranjeSadrzaja, String sigurnost, String rjesavanjeProblema) {
-        super(imePrezime, adresa, brojMobitela, emailAdresa, linkovi);
+    public DigitalnaVjestina( String obradaInformacija, String komunikacija, String stvaranjeSadrzaja, String sigurnost, String rjesavanjeProblema) {
+
         this.obradaInformacija = obradaInformacija;
         this.komunikacija = komunikacija;
         this.stvaranjeSadrzaja = stvaranjeSadrzaja;

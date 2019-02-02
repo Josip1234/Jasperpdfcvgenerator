@@ -1,11 +1,11 @@
-public class OstalaVjestina extends OsnovnaInformacija {
+public class OstalaVjestina  {
     private String vjestine;
 
     public OstalaVjestina(){
 
     }
-    public OstalaVjestina(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, String vjestine) {
-        super(imePrezime, adresa, brojMobitela, emailAdresa, linkovi);
+    public OstalaVjestina( String vjestine) {
+
         this.vjestine = vjestine;
     }
 
