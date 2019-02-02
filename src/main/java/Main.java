@@ -13,13 +13,14 @@ public class Main {
         KomunikacijskaVjestina komunikacijskaVjestina=new KomunikacijskaVjestina();
         DigitalnaVjestina digitalnaVjestina=new DigitalnaVjestina();
         OstalaVjestina ostalaVjestina = new OstalaVjestina();
+
         try {
                     Scanner s = new Scanner(new File("properties.config"));
 
 
                     while (s.hasNextLine()) {
 
-                        informacija.setImePrezime(s.nextLine());
+                        informacija.setImePrezime(rastaviString(s.nextLine()));
                         informacija.setBrojMobitela(s.nextLine());
                         informacija.setEmailAdresa(s.nextLine());
                         informacija.setAdresa(s.nextLine());
@@ -98,6 +99,38 @@ public class Main {
                 }catch (Exception e){
                 }
             }
+
+    public static String  rastaviString(String string){
+
+        String kljuc="";
+        String vrijednost="";
+        int pozicijaStringa=0;
+        int pozicijaJednakosti=getPozicijuJednakosti(string);
+        for (int i=0;i<string.length();i++){
+            pozicijaStringa=i;
+            if(pozicijaStringa<pozicijaJednakosti){
+                kljuc+=string.charAt(i);
+            }else if(pozicijaStringa>pozicijaJednakosti){
+                vrijednost+=string.charAt(i);
+            }
+
+
+
+
+        }
+
+        return vrijednost;
+    }
+    public static int getPozicijuJednakosti(String vrijednost){
+        int broj=0;
+        for (int i=0;i<vrijednost.length();i++){
+            if(vrijednost.charAt(i)=='='){
+                broj=i;
+                break;
+            }
+        }
+        return broj;
+    }
 
 
         }

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="72bd3300-fd1a-4076-963e-37ac0478c836">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 3_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 3_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 4_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 4_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 5_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 5_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<style name="Table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
+			<bottomPen lineWidth="0.5" lineColor="#C6C6C6"/>
+		</box>
+	</style>
+	<subDataset name="Strani jezici" uuid="5cacafc6-539f-4dcf-89d8-3590f2eab78c">
+		<property name="com.jaspersoft.studio.data.sql.tables">
+			<![CDATA[Y3ZkYXRhYmFzZS5vc29ibmV2amVzdGluZSBBUyAsODYsMzIsMDM3YjEzOTAtOTgzNy00MWMzLThk
+Y2ItNDI3ZTQyM2FmMjgyOw==]]>
+		</property>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT cvdatabase.osobnevjestine.slušanje,
+	cvdatabase.osobnevjestine.čitanje,
+	cvdatabase.osobnevjestine.`govornaInterakcija`,
+	cvdatabase.osobnevjestine.`govornaProdukcija`,
+	cvdatabase.osobnevjestine.pisanje
+FROM cvdatabase.osobnevjestine]]>
+		</queryString>
+		<field name="slušanje" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="slušanje"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+		</field>
+		<field name="čitanje" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="čitanje"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+		</field>
+		<field name="govornaInterakcija" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="govornaInterakcija"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+		</field>
+		<field name="govornaProdukcija" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="govornaProdukcija"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+		</field>
+		<field name="pisanje" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="pisanje"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+		</field>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT osobneinformacije.ImePrezime,osobneinformacije.brojMobitela,osobneinformacije.emailAdresa,osobneinformacije.adresa,osobneinformacije.linkovi,zanimanje.Zvanje,obrazovanje.datumPočetka,obrazovanje.datumZavršetka,obrazovanje.titula,obrazovanje.mjesto,obrazovanje.tehnikeZanimanja,osobnevjestine.materinskiJezik,osobnevjestine.straniJezici,osobnevjestine.slušanje,osobnevjestine.čitanje,osobnevjestine.govornaInterakcija,osobnevjestine.govornaProdukcija,osobnevjestine.pisanje FROM osobneinformacije,zanimanje,obrazovanje,osobnevjestine]]>
+	</queryString>
+	<field name="ImePrezime" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ImePrezime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobneinformacije"/>
+	</field>
+	<field name="brojMobitela" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="brojMobitela"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobneinformacije"/>
+	</field>
+	<field name="emailAdresa" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="emailAdresa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobneinformacije"/>
+	</field>
+	<field name="adresa" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="adresa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobneinformacije"/>
+	</field>
+	<field name="linkovi" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="linkovi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobneinformacije"/>
+	</field>
+	<field name="Zvanje" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Zvanje"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="zanimanje"/>
+	</field>
+	<field name="datumPočetka" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="datumPočetka"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="obrazovanje"/>
+	</field>
+	<field name="datumZavršetka" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="datumZavršetka"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="obrazovanje"/>
+	</field>
+	<field name="titula" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="titula"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="obrazovanje"/>
+	</field>
+	<field name="mjesto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="mjesto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="obrazovanje"/>
+	</field>
+	<field name="tehnikeZanimanja" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tehnikeZanimanja"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="obrazovanje"/>
+	</field>
+	<field name="materinskiJezik" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="materinskiJezik"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+	</field>
+	<field name="straniJezici" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="straniJezici"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+	</field>
+	<field name="slušanje" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="slušanje"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+	</field>
+	<field name="čitanje" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="čitanje"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+	</field>
+	<field name="govornaInterakcija" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="govornaInterakcija"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+	</field>
+	<field name="govornaProdukcija" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="govornaProdukcija"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+	</field>
+	<field name="pisanje" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="pisanje"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="osobnevjestine"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="163" y="10" width="114" height="30" forecolor="#1593CB" uuid="bd483d62-da74-484d-bc5b-680e5b5a2e2a">
+					<property name="com.jaspersoft.studio.element.name" value="NASLOV"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="9" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Životopis]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="135" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="0" width="130" height="30" forecolor="#0E4194" uuid="6a1191f9-8587-48bb-966a-60f00ca43428"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[OSOBNE INFORMACIJE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="0" width="100" height="30" uuid="f5cd7205-f03f-4f39-9483-d9320e80a04f"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Arial" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ImePrezime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="30" width="180" height="20" uuid="be1f7ad5-05b5-4c04-8af6-b15ccc9b88fa"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{adresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="50" width="84" height="20" uuid="d80f1b28-a203-4111-a2ba-dc7bb6ee1053"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{brojMobitela}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="70" width="100" height="20" uuid="03fba614-8ea5-42de-b269-d420883fa28a"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emailAdresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="90" width="376" height="20" uuid="07679ba3-3155-45c2-ac35-2412375f1582"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{linkovi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement x="21" y="0" width="114" height="30" forecolor="#0E4194" uuid="f7dc940a-2cc0-4916-adbb-bbfd42bd0433">
+					<property name="com.jaspersoft.studio.element.name" value="ZVANJE"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[ZVANJE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="161" y="6" width="100" height="21" uuid="c21f0408-c27b-41f0-ac1f-3b40bd1e14b8"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Zvanje}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="36" width="116" height="30" forecolor="#0E4194" uuid="fa79c637-e53d-40c8-8821-9b57189973a2">
+					<property name="com.jaspersoft.studio.element.name" value="OBRAZOVANJE"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[OBRAZOVANJE I OSPOSOBLJAVANJE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="97" splitType="Stretch">
+			<textField pattern="d/MM/yyyy">
+				<reportElement x="48" y="20" width="75" height="30" forecolor="#0E4194" uuid="5c30a5a9-7e24-4922-8ae0-3929c0a4a377">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2b5b82b6-ce7b-4411-ae40-75edb40fc7e0"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datumPočetka}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="93" y="20" width="5" height="30" forecolor="#0E4194" uuid="2ed3d01e-9997-4642-86b8-dba4dcf46c5f">
+					<property name="com.jaspersoft.studio.element.name" value="-"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<textField pattern="d/MM/yyyy">
+				<reportElement x="96" y="20" width="84" height="30" forecolor="#0E4194" uuid="8367583d-4ac9-4143-9ba4-5cc8101fcc28">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d9d14a1-0bf8-4c50-9137-57a567afbf35"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datumZavršetka}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="20" width="316" height="30" forecolor="#0E4194" uuid="7fba5907-3054-4550-8c1e-c820e7bf5eca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="691f6123-ab12-48f0-afbe-d5623dc29ce1"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{titula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="40" width="315" height="44" uuid="a27bdec9-f7ed-49ec-8a68-a40aa66a8ce0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c7089f1c-e48e-40e3-8939-c2ec6986af5f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{mjesto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="61" width="407" height="36" uuid="e625e85c-e6d6-452e-8588-7364ab95fc28">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f880bf03-f1af-4dce-9c12-5d0c5f4b0a64"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tehnikeZanimanja}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="279" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="48" y="0" width="87" height="30" forecolor="#0E4194" uuid="5ecdaca0-9bc7-4aca-a295-78dab068fff2">
+					<property name="com.jaspersoft.studio.element.name" value="OSOBNE VJEŠTINE"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[OSOBNE VJEŠTINE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="50" y="30" width="86" height="30" forecolor="#0E4194" uuid="93b2ca05-491b-40e6-8a61-90310431f7ce">
+					<property name="com.jaspersoft.studio.element.name" value="Materinski jezik"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Materinski jezik]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="163" y="30" width="92" height="30" uuid="c4ac56d2-44f5-45b6-9241-567ae210ce1d"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{materinskiJezik}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="50" y="60" width="86" height="30" forecolor="#0E4194" uuid="4adbc4d1-594e-4697-b3eb-aa5c76f48a05">
+					<property name="com.jaspersoft.studio.element.name" value="Strani jezici"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Strani jezici]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="48" y="90" width="88" height="30" uuid="d6583786-d175-4ece-a5ae-5cbe411f1193"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{straniJezici}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="182" y="79" width="200" height="91" uuid="824a5eab-4c64-4bce-8256-e5eec573d822">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 5_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 5_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 5_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Strani jezici" uuid="d3b28c8f-451b-4f8c-bd8f-162983c01a1c">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="40" uuid="dbd72eb8-487e-4a26-bcfb-6279bcc3e2b4">
+						<jr:tableHeader style="Table 5_TH" height="30"/>
+						<jr:columnHeader style="Table 5_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="1e6b1f36-c3ee-4fe8-aaf7-16e38dd75d6b"/>
+								<text><![CDATA[slušanje]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 5_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="f97cd366-389a-481c-b1f2-7934a162d184"/>
+								<textFieldExpression><![CDATA[$F{slušanje}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="9125c08e-77b2-4e94-9357-c1da29feced0">
+						<jr:tableHeader style="Table 5_TH" height="30"/>
+						<jr:columnHeader style="Table 5_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="335a9ef7-d945-46d9-9613-77edcbf8acd9"/>
+								<text><![CDATA[čitanje]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 5_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="aba096fd-bdaf-43e8-b5f9-ba5d494e77a9"/>
+								<textFieldExpression><![CDATA[$F{čitanje}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="9f99e45c-e4ea-44b5-848d-28b0bbab7507">
+						<jr:tableHeader style="Table 5_TH" height="30"/>
+						<jr:columnHeader style="Table 5_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="9fb6ff95-ad5d-4dc7-a5f4-60d2613c7f91"/>
+								<text><![CDATA[govornaInterakcija]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 5_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="0ce857b3-e31b-47a6-8771-8a48f3d4ab6c"/>
+								<textFieldExpression><![CDATA[$F{govornaInterakcija}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="49d91154-9fed-431f-89b7-552963aef393">
+						<jr:tableHeader style="Table 5_TH" height="30"/>
+						<jr:columnHeader style="Table 5_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="d8e9d172-0d5f-4848-a6ec-645b5cf16980"/>
+								<text><![CDATA[govornaProdukcija]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 5_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="ff499d53-237e-42ec-bb74-5bc26d3808a9"/>
+								<textFieldExpression><![CDATA[$F{govornaProdukcija}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="1b598552-d145-4882-b8ad-454b19154240">
+						<jr:tableHeader style="Table 5_TH" height="30"/>
+						<jr:columnHeader style="Table 5_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="3a1bc59d-a2d9-4372-b881-71686385efd9"/>
+								<text><![CDATA[pisanje]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 5_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="37817e5d-1e9c-45e4-a72a-5d23f58f5be9"/>
+								<textFieldExpression><![CDATA[$F{pisanje}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
