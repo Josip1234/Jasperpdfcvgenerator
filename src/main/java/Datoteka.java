@@ -4,44 +4,46 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Datoteka {
-    private Locale locale;
-    private Scanner inputStream;
-    private FileInputStream inputFile;
+    private Locale lokalizacija;
+    private Scanner ulazniTok;
+    private FileInputStream ulaznaDatoteka;
 
     public Datoteka() throws FileNotFoundException {
-        this.locale=new Locale("hr","HR");
-        this.inputFile=new FileInputStream("properties.config");
-        this.inputStream=new Scanner(inputFile,"UTF-8").useLocale(locale);
+        this.lokalizacija=new Locale("hr","HR");
+        this.ulaznaDatoteka=new FileInputStream("properties.config");
+        this.ulazniTok=new Scanner(ulaznaDatoteka,"UTF-8").useLocale(lokalizacija);
     }
 
-    public Locale getLocale() {
-        return locale;
+    public Locale getLokalizacija() {
+        return lokalizacija;
     }
 
-    public void setLocale(Locale locale) {
-        this.locale = locale;
+    public void setLokalizacija(Locale lokalizacija) {
+        this.lokalizacija = lokalizacija;
     }
 
-    public Scanner getInputStream() {
-        return inputStream;
+    public Scanner getUlazniTok() {
+        return ulazniTok;
     }
 
-    public void setInputStream(Scanner inputStream) {
-        this.inputStream = inputStream;
+    public void setUlazniTok(Scanner ulazniTok) {
+        this.ulazniTok = ulazniTok;
     }
 
-    public FileInputStream getInputFile() {
-        return inputFile;
+    public FileInputStream getUlaznaDatoteka() {
+        return ulaznaDatoteka;
     }
 
-    public void setInputFile(FileInputStream inputFile) {
-        this.inputFile = inputFile;
+    public void setUlaznaDatoteka(FileInputStream ulaznaDatoteka) {
+        this.ulaznaDatoteka = ulaznaDatoteka;
     }
-    public void printFile(){
-        while (this.inputStream.hasNextLine()){
-            String vrijednost1=inputStream.nextLine();
+
+    public void ispisiDatoteku(){
+        while (this.ulazniTok.hasNextLine()){
+            String vrijednost1=ulazniTok.nextLine();
             System.out.println(vrijednost1);
         }
-        this.inputStream.close();
+        this.ulazniTok.close();
     }
+
 }

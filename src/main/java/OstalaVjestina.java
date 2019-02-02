@@ -16,7 +16,7 @@ public class OstalaVjestina extends OsnovnaInformacija {
 
     @Override
     public String toString() {
-        return "OstalaVjestina{" +
+        return "Ostale Vjestine{" +
                 "vjestine='" + vjestine + '\'' +
                 '}';
     }

@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
          Datoteka datoteka=new Datoteka();
-         datoteka.printFile();
+         datoteka.ispisiDatoteku();
 
     }
 }
