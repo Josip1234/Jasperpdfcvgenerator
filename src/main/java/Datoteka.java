@@ -52,24 +52,57 @@ public class Datoteka {
 
     
     public void parsirajDatoteku(){
-        int index=0;
+
         OsnovnaInformacija informacija=new OsnovnaInformacija();
-        int brojElemenata=OsnovnaInformacija.brojElemenataKlase(informacija);
+        Zanimanje zanimanje=new Zanimanje();
+        int brojElemenataZanimanja=Zanimanje.brojElemenataKlase(zanimanje);
+        int brojElemenataOsnovneInformacije=OsnovnaInformacija.brojElemenataKlase(informacija);
+
+        Obrazovanje obrazovanje=new Obrazovanje();
+        Obrazovanje obrazovanje2=new Obrazovanje();
+
 
 
         
         HashMap<String,String> mapa=new HashMap<String, String>();
         while (this.ulazniTok.hasNextLine()){
-            String vrijednost=ulazniTok.nextLine();
-            mapa=rastaviKljucVrijednost(vrijednost);
-            postaviVrijednosti(dohvatiVrijednost(mapa),informacija);
 
+                    String vrijednost=ulazniTok.nextLine();
+                    mapa=rastaviKljucVrijednost(vrijednost);
+                    postaviVrijednosti(dohvatiVrijednost(mapa),informacija);
+
+
+
+
+
+
+            }
+
+        System.out.println(informacija.getImePrezime());
+        System.out.println(informacija.getBrojMobitela());
+        System.out.println(informacija.getEmailAdresa());
+        System.out.println(informacija.getAdresa());
+        System.out.println(informacija.getLinkovi());
+        System.out.println(zanimanje.getZvanje());
+        System.out.println(obrazovanje.getDatumPocetka());
+        System.out.println(obrazovanje.getDatumKraja());
+        System.out.println(obrazovanje.getTitula());
+        System.out.println(obrazovanje.getMjesto());
+        System.out.println(obrazovanje.getTehnikeZanimanja());
+
+        System.out.println(obrazovanje2.getDatumPocetka());
+        System.out.println(obrazovanje2.getDatumKraja());
+        System.out.println(obrazovanje2.getTitula());
+        System.out.println(obrazovanje2.getMjesto());
+        System.out.println(obrazovanje2.getTehnikeZanimanja());
 
         }
-        System.out.println(informacija.getImePrezime()+" "+informacija.getBrojMobitela()+" "+informacija.getEmailAdresa());
 
-    }
+
+
+
     public void postaviVrijednosti(String vrijednost,Object o){
+
           if(o instanceof OsnovnaInformacija){
               if(((OsnovnaInformacija) o).getImePrezime().equals("")){
                   ((OsnovnaInformacija) o).setImePrezime(vrijednost);
@@ -77,9 +110,29 @@ public class Datoteka {
                   ((OsnovnaInformacija) o).setBrojMobitela(vrijednost);
               }else if(((OsnovnaInformacija) o).getEmailAdresa().equals("")&&(!(((OsnovnaInformacija) o).getImePrezime().equals("") && ((OsnovnaInformacija) o).getBrojMobitela().equals("")))){
                   ((OsnovnaInformacija) o).setEmailAdresa(vrijednost);
+              }else if(((OsnovnaInformacija) o).getAdresa().equals("")&&(!(((OsnovnaInformacija) o).getImePrezime().equals("")&&(((OsnovnaInformacija) o).getBrojMobitela().equals(""))&&(((OsnovnaInformacija) o).getEmailAdresa().equals(""))))){
+                  ((OsnovnaInformacija) o).setAdresa(vrijednost);
+              }else if(((OsnovnaInformacija) o).getLinkovi().equals("")&&(!((((OsnovnaInformacija) o).getImePrezime().equals(""))&&(((OsnovnaInformacija) o).getBrojMobitela().equals(""))&&(((OsnovnaInformacija) o).getEmailAdresa().equals(""))&&(((OsnovnaInformacija) o).getAdresa().equals(""))))){
+                  ((OsnovnaInformacija) o).setLinkovi(vrijednost);
               }
-
-
+          }
+          if(o instanceof Zanimanje){
+              if(((Zanimanje) o).getZvanje().equals("")){
+                  ((Zanimanje)o).setZvanje(vrijednost);
+              }
+          }
+          if(o instanceof Obrazovanje){
+              if(((Obrazovanje) o).getDatumPocetka().equals("")){
+                  ((Obrazovanje) o).setDatumPocetka(vrijednost);
+              }else if(((Obrazovanje) o).getDatumKraja().equals("")&&(!((Obrazovanje) o).getDatumPocetka().equals(""))){
+                  ((Obrazovanje) o).setDatumKraja(vrijednost);
+              }else if(((Obrazovanje) o).getTitula().equals("")&&(!(((Obrazovanje) o).getDatumKraja().equals("")&&(((Obrazovanje) o).getDatumPocetka().equals(""))))){
+                  ((Obrazovanje) o).setTitula(vrijednost);
+              }else if(((Obrazovanje) o).getMjesto().equals("")&&(!(((Obrazovanje) o).getTitula().equals("")&&((Obrazovanje) o).getDatumKraja().equals("")&&(((Obrazovanje) o).getDatumPocetka().equals(""))))){
+                   ((Obrazovanje) o).setMjesto(vrijednost);
+              }else if(((Obrazovanje) o).getTehnikeZanimanja().equals("")&&(!(((Obrazovanje) o).getMjesto().equals("")&&((((Obrazovanje) o).getTitula().equals("")&&((Obrazovanje) o).getDatumKraja().equals("")&&(((Obrazovanje) o).getDatumPocetka().equals(""))))))){
+                  ((Obrazovanje) o).setTehnikeZanimanja(vrijednost);
+              }
           }
     }
     public String dohvatiVrijednost(HashMap<String,String> map){
@@ -126,5 +179,10 @@ public class Datoteka {
         return broj;
     }
 
+    public static void preskociLinije(Scanner s,int brojLinija){
+        for (int i=0;i<brojLinija;i++){
+            if(s.hasNextLine()) s.nextLine();
+        }
+    }
 
 }

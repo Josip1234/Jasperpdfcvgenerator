@@ -3,16 +3,21 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Obrazovanje extends OsnovnaInformacija {
-    private Date datumPocetka;
-    private Date datumKraja;
+    private String datumPocetka;
+    private String datumKraja;
     private String titula;
     private String mjesto;
     private String tehnikeZanimanja;
 
     public Obrazovanje() {
+        this.datumPocetka = "";
+        this.datumKraja = "";
+        this.titula = "";
+        this.mjesto ="";
+        this.tehnikeZanimanja="";
     }
 
-    public Obrazovanje(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, Date datumPocetka, Date datumKraja, String titula, String mjesto, String tehnikeZanimanja) {
+    public Obrazovanje(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, String datumPocetka, String datumKraja, String titula, String mjesto, String tehnikeZanimanja) {
         super(imePrezime, adresa, brojMobitela, emailAdresa, linkovi);
         this.datumPocetka = datumPocetka;
         this.datumKraja = datumKraja;
@@ -21,19 +26,19 @@ public class Obrazovanje extends OsnovnaInformacija {
         this.tehnikeZanimanja = tehnikeZanimanja;
     }
 
-    public Date getDatumPocetka() {
+    public String getDatumPocetka() {
         return datumPocetka;
     }
 
-    public void setDatumPocetka(Date datumPocetka) {
+    public void setDatumPocetka(String datumPocetka) {
         this.datumPocetka = datumPocetka;
     }
 
-    public Date getDatumKraja() {
+    public String getDatumKraja() {
         return datumKraja;
     }
 
-    public void setDatumKraja(Date datumKraja) {
+    public void setDatumKraja(String datumKraja) {
         this.datumKraja = datumKraja;
     }
 
@@ -61,16 +66,7 @@ public class Obrazovanje extends OsnovnaInformacija {
         this.tehnikeZanimanja = tehnikeZanimanja;
     }
 
-    public void parseDate(String date1, String date2) {
-        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        try {
-            setDatumPocetka(format.parse(date1));
-            setDatumKraja(format.parse(date2));
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
 
-    }
 
     @Override
     public String toString() {
