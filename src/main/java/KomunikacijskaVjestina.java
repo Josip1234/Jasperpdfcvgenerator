@@ -1,6 +1,9 @@
 public class KomunikacijskaVjestina extends OsnovnaInformacija {
     private String vjestina;
 
+    public KomunikacijskaVjestina() {
+    }
+
     public KomunikacijskaVjestina(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, String vjestina) {
         super(imePrezime, adresa, brojMobitela, emailAdresa, linkovi);
         this.vjestina = vjestina;
@@ -19,5 +22,9 @@ public class KomunikacijskaVjestina extends OsnovnaInformacija {
         return "KomunikacijskaVjestina{" +
                 "vjestina='" + vjestina + '\'' +
                 '}';
+    }
+    public static int brojElemenataKlase(KomunikacijskaVjestina komunikacijskaVjestina){
+
+        return komunikacijskaVjestina.getClass().getDeclaredFields().length;
     }
 }

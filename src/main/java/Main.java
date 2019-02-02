@@ -10,5 +10,6 @@ public class Main {
         Datoteka datoteka=new Datoteka();
         datoteka.parsirajDatoteku();
 
+
     }
 }

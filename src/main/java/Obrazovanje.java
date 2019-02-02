@@ -9,6 +9,9 @@ public class Obrazovanje extends OsnovnaInformacija {
     private String mjesto;
     private String tehnikeZanimanja;
 
+    public Obrazovanje() {
+    }
+
     public Obrazovanje(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, Date datumPocetka, Date datumKraja, String titula, String mjesto, String tehnikeZanimanja) {
         super(imePrezime, adresa, brojMobitela, emailAdresa, linkovi);
         this.datumPocetka = datumPocetka;
@@ -78,5 +81,9 @@ public class Obrazovanje extends OsnovnaInformacija {
                 ", mjesto='" + mjesto + '\'' +
                 ", tehnikeZanimanja='" + tehnikeZanimanja + '\'' +
                 '}';
+}
+    public static int brojElemenataKlase(Obrazovanje obrazovanje){
+
+        return obrazovanje.getClass().getDeclaredFields().length;
     }
 }

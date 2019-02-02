@@ -7,6 +7,9 @@ public class OsobnaVjestina extends OsnovnaInformacija {
     private String govornaProdukcija;
     private String pisanje;
 
+    public OsobnaVjestina(){
+
+    }
     public OsobnaVjestina(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, String materinskiJezik, String straniJezici, String slusanje, String citanje, String govornaInterakcija, String govornaProdukcija, String pisanje) {
         super(imePrezime, adresa, brojMobitela, emailAdresa, linkovi);
         this.materinskiJezik = materinskiJezik;
@@ -85,5 +88,9 @@ public class OsobnaVjestina extends OsnovnaInformacija {
                 ", govornaProdukcija='" + govornaProdukcija + '\'' +
                 ", pisanje='" + pisanje + '\'' +
                 '}';
+    }
+    public static int brojElemenataKlase(OsobnaVjestina osobnaVjestina){
+
+        return osobnaVjestina.getClass().getDeclaredFields().length;
     }
 }

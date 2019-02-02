@@ -1,6 +1,9 @@
 public class OstalaVjestina extends OsnovnaInformacija {
     private String vjestine;
 
+    public OstalaVjestina(){
+
+    }
     public OstalaVjestina(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, String vjestine) {
         super(imePrezime, adresa, brojMobitela, emailAdresa, linkovi);
         this.vjestine = vjestine;
@@ -19,5 +22,9 @@ public class OstalaVjestina extends OsnovnaInformacija {
         return "Ostale Vjestine{" +
                 "vjestine='" + vjestine + '\'' +
                 '}';
+    }
+    public static int brojElemenataKlase(OsobnaVjestina osobnaVjestina){
+
+        return osobnaVjestina.getClass().getDeclaredFields().length;
     }
 }

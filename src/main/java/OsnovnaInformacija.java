@@ -5,6 +5,14 @@ public class OsnovnaInformacija {
     private String emailAdresa;
     private String linkovi;
 
+    public OsnovnaInformacija() {
+        this.imePrezime="";
+        this.adresa="";
+        this.brojMobitela="";
+        this.emailAdresa="";
+        this.linkovi="";
+    }
+
     public OsnovnaInformacija(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi) {
         this.imePrezime = imePrezime;
         this.adresa = adresa;
@@ -62,5 +70,10 @@ public class OsnovnaInformacija {
                 ", emailAdresa='" + emailAdresa + '\'' +
                 ", linkovi='" + linkovi + '\'' +
                 '}';
+    }
+
+    public static int brojElemenataKlase(OsnovnaInformacija osnovnaInformacija){
+
+        return osnovnaInformacija.getClass().getDeclaredFields().length;
     }
 }

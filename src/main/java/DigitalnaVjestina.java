@@ -5,6 +5,9 @@ public class DigitalnaVjestina extends OsnovnaInformacija {
     private String sigurnost;
     private String rjesavanjeProblema;
 
+    public DigitalnaVjestina() {
+    }
+
     public DigitalnaVjestina(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, String obradaInformacija, String komunikacija, String stvaranjeSadrzaja, String sigurnost, String rjesavanjeProblema) {
         super(imePrezime, adresa, brojMobitela, emailAdresa, linkovi);
         this.obradaInformacija = obradaInformacija;
@@ -63,5 +66,10 @@ public class DigitalnaVjestina extends OsnovnaInformacija {
                 ", sigurnost='" + sigurnost + '\'' +
                 ", rjesavanjeProblema='" + rjesavanjeProblema + '\'' +
                 '}';
+    }
+
+    public static int brojElemenataKlase(DigitalnaVjestina digitalnaVjestina){
+
+        return digitalnaVjestina.getClass().getDeclaredFields().length;
     }
 }
