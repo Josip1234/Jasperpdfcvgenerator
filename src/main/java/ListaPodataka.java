@@ -7,13 +7,7 @@ public class ListaPodataka {
     public  OsnovnaInformacija  ucitajPodatkeIzDatoteke(){
 
         OsnovnaInformacija informacija=new OsnovnaInformacija();
-        Zanimanje zanimanje = new Zanimanje();
-        Obrazovanje obrazovanje=new Obrazovanje();
-        Obrazovanje obrazovanje2=new Obrazovanje();
-        OsobnaVjestina osobnaVjestina=new OsobnaVjestina();
-        KomunikacijskaVjestina komunikacijskaVjestina=new KomunikacijskaVjestina();
-        DigitalnaVjestina digitalnaVjestina=new DigitalnaVjestina();
-        OstalaVjestina ostalaVjestina = new OstalaVjestina();
+
 
         try {
             Scanner s = new Scanner(new File("properties.config"));
@@ -26,36 +20,36 @@ public class ListaPodataka {
                 informacija.setEmailAdresa(rastaviString(s.nextLine()));
                 informacija.setAdresa(rastaviString(s.nextLine()));
                 informacija.setLinkovi(rastaviString(s.nextLine()));
-                zanimanje.setZvanje(rastaviString(s.nextLine()));
-                obrazovanje.setDatumPocetka(rastaviString(s.nextLine()));
-                obrazovanje.setDatumKraja(rastaviString(s.nextLine()));
-                obrazovanje.setTitula(rastaviString(s.nextLine()));
-                obrazovanje.setMjesto(rastaviString(s.nextLine()));
-                obrazovanje.setTehnikeZanimanja(rastaviString(s.nextLine()));
+                informacija.setZvanje(rastaviString(s.nextLine()));
+                informacija.setDatumPocetka(rastaviString(s.nextLine()));
+                informacija.setDatumKraja(rastaviString(s.nextLine()));
+                informacija.setTitula(rastaviString(s.nextLine()));
+                informacija.setMjesto(rastaviString(s.nextLine()));
+                informacija.setTehnikeZanimanja(rastaviString(s.nextLine()));
 
-                obrazovanje2.setDatumPocetka(rastaviString(s.nextLine()));
-                obrazovanje2.setDatumKraja(rastaviString(s.nextLine()));
-                obrazovanje2.setTitula(rastaviString(s.nextLine()));
-                obrazovanje2.setMjesto(rastaviString(s.nextLine()));
-                obrazovanje2.setTehnikeZanimanja(rastaviString(s.nextLine()));
+                informacija.setDatumPocetka2(rastaviString(s.nextLine()));
+                informacija.setDatumKraja2(rastaviString(s.nextLine()));
+                informacija.setTitula2(rastaviString(s.nextLine()));
+                informacija.setMjesto2(rastaviString(s.nextLine()));
+                informacija.setTehnikeZanimanja2(rastaviString(s.nextLine()));
 
-                osobnaVjestina.setMaterinskiJezik(rastaviString(s.nextLine()));
-                osobnaVjestina.setStraniJezici(rastaviString(s.nextLine()));
-                osobnaVjestina.setSlusanje(rastaviString(s.nextLine()));
-                osobnaVjestina.setCitanje(rastaviString(s.nextLine()));
-                osobnaVjestina.setGovornaInterakcija(rastaviString(s.nextLine()));
-                osobnaVjestina.setGovornaProdukcija(rastaviString(s.nextLine()));
-                osobnaVjestina.setPisanje(rastaviString(s.nextLine()));
+                informacija.setMaterinskiJezik(rastaviString(s.nextLine()));
+                informacija.setStraniJezici(rastaviString(s.nextLine()));
+                informacija.setSlusanje(rastaviString(s.nextLine()));
+                informacija.setCitanje(rastaviString(s.nextLine()));
+                informacija.setGovornaInterakcija(rastaviString(s.nextLine()));
+                informacija.setGovornaProdukcija(rastaviString(s.nextLine()));
+                informacija.setPisanje(rastaviString(s.nextLine()));
 
-                komunikacijskaVjestina.setVjestina(rastaviString(s.nextLine()));
+                informacija.setVjestina(rastaviString(s.nextLine()));
 
-                digitalnaVjestina.setObradaInformacija(rastaviString(s.nextLine()));
-                digitalnaVjestina.setKomunikacija(rastaviString(s.nextLine()));
-                digitalnaVjestina.setStvaranjeSadrzaja(rastaviString(s.nextLine()));
-                digitalnaVjestina.setSigurnost(rastaviString(s.nextLine()));
-                digitalnaVjestina.setRjesavanjeProblema(rastaviString(s.nextLine()));
+                informacija.setObradaInformacija(rastaviString(s.nextLine()));
+                informacija.setKomunikacija(rastaviString(s.nextLine()));
+                informacija.setStvaranjeSadrzaja(rastaviString(s.nextLine()));
+                informacija.setSigurnost(rastaviString(s.nextLine()));
+                informacija.setRjesavanjeProblema(rastaviString(s.nextLine()));
 
-                ostalaVjestina.setVjestine(rastaviString(s.nextLine()));
+                informacija.setOstaleVjestine(rastaviString(s.nextLine()));
 
 
 

@@ -11,13 +11,11 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args)  {
-
-
-        String sourceFileName = "C:\\Users\\Korisnik\\IdeaProjects\\Jasperpdfcvgenerator\\JaspersoftWorkspace\\Blank_A4_2.jasper";
+        String sourceFileName ="C://Users//Korisnik//JaspersoftWorkspace//TemplateToPDFConvert//jasper_report_template.jasper";
 
         DataBeanList DataBeanList = new DataBeanList();
         ArrayList<DataBean> dataList = DataBeanList.getDataBeanList();
-        String printFileName = null;
+
         JRBeanCollectionDataSource beanColDataSource =
                 new JRBeanCollectionDataSource(dataList);
 
@@ -29,15 +27,15 @@ public class Main {
         parameters.put("Author", "Prepared By Manisha");
 
         try {
-            printFileName = JasperFillManager.fillReportToFile(
+            JasperFillManager.fillReportToFile(
                     sourceFileName, parameters, beanColDataSource);
-            if(printFileName != null){
-                JasperPrintManager.printReport( printFileName, true);
-            }
         } catch (JRException e) {
             e.printStackTrace();
         }
     }
+
+
+
 
 
 
