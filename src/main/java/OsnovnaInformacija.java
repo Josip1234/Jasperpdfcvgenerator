@@ -5,8 +5,8 @@ public class OsnovnaInformacija {
     private String emailAdresa;
     private String linkovi;
     private String zvanje;
-    private String datumPocetka;
-    private String datumKraja;
+    private String datumPočetka;
+    private String datumZavršetka;
     private String titula;
     private String mjesto;
     private String tehnikeZanimanja;
@@ -15,6 +15,29 @@ public class OsnovnaInformacija {
     private String titula2;
     private String mjesto2;
     private String tehnikeZanimanja2;
+    private String ostaleVjestine;
+    private String materinskiJezik;
+    private String straniJezici;
+    private String slušanje;
+    private String čitanje;
+    private String govornaInterakcija;
+    private String govornaProdukcija;
+    private String pisanje;
+    private String vjestine;
+    private String obrada;
+    private String komunikacija;
+    private String stvaranjeSadržaja;
+    private String sigurnost;
+    private String rješavanjeProblema;
+
+
+    public String getZvanje() {
+        return zvanje;
+    }
+
+    public void setZvanje(String zvanje) {
+        this.zvanje = zvanje;
+    }
 
     public String getDatumPocetka2() {
         return datumPocetka2;
@@ -55,21 +78,6 @@ public class OsnovnaInformacija {
     public void setTehnikeZanimanja2(String tehnikeZanimanja2) {
         this.tehnikeZanimanja2 = tehnikeZanimanja2;
     }
-
-    private String ostaleVjestine;
-    private String materinskiJezik;
-    private String straniJezici;
-    private String slusanje;
-    private String citanje;
-    private String govornaInterakcija;
-    private String govornaProdukcija;
-    private String pisanje;
-    private String vjestina;
-    private String obradaInformacija;
-    private String komunikacija;
-    private String stvaranjeSadrzaja;
-    private String sigurnost;
-    private String rjesavanjeProblema;
 
 
     public String getImePrezime() {
@@ -112,28 +120,24 @@ public class OsnovnaInformacija {
         this.linkovi = linkovi;
     }
 
-    public String getZvanje() {
-        return zvanje;
+
+
+
+
+    public String getDatumPočetka() {
+        return datumPočetka;
     }
 
-    public void setZvanje(String zvanje) {
-        this.zvanje = zvanje;
+    public void setDatumPočetka(String datumPočetka) {
+        this.datumPočetka = datumPočetka;
     }
 
-    public String getDatumPocetka() {
-        return datumPocetka;
+    public String getDatumZavršetka() {
+        return datumZavršetka;
     }
 
-    public void setDatumPocetka(String datumPocetka) {
-        this.datumPocetka = datumPocetka;
-    }
-
-    public String getDatumKraja() {
-        return datumKraja;
-    }
-
-    public void setDatumKraja(String datumKraja) {
-        this.datumKraja = datumKraja;
+    public void setDatumZavršetka(String datumZavršetka) {
+        this.datumZavršetka = datumZavršetka;
     }
 
     public String getTitula() {
@@ -184,20 +188,20 @@ public class OsnovnaInformacija {
         this.straniJezici = straniJezici;
     }
 
-    public String getSlusanje() {
-        return slusanje;
+    public String getSlušanje() {
+        return slušanje;
     }
 
-    public void setSlusanje(String slusanje) {
-        this.slusanje = slusanje;
+    public void setSlušanje(String slušanje) {
+        this.slušanje = slušanje;
     }
 
-    public String getCitanje() {
-        return citanje;
+    public String getČitanje() {
+        return čitanje;
     }
 
-    public void setCitanje(String citanje) {
-        this.citanje = citanje;
+    public void setČitanje(String čitanje) {
+        this.čitanje = čitanje;
     }
 
     public String getGovornaInterakcija() {
@@ -224,20 +228,20 @@ public class OsnovnaInformacija {
         this.pisanje = pisanje;
     }
 
-    public String getVjestina() {
-        return vjestina;
+    public String getVjestine() {
+        return vjestine;
     }
 
-    public void setVjestina(String vjestina) {
-        this.vjestina = vjestina;
+    public void setVjestine(String vjestine) {
+        this.vjestine = vjestine;
     }
 
-    public String getObradaInformacija() {
-        return obradaInformacija;
+    public String getObrada() {
+        return obrada;
     }
 
-    public void setObradaInformacija(String obradaInformacija) {
-        this.obradaInformacija = obradaInformacija;
+    public void setObrada(String obrada) {
+        this.obrada = obrada;
     }
 
     public String getKomunikacija() {
@@ -248,12 +252,12 @@ public class OsnovnaInformacija {
         this.komunikacija = komunikacija;
     }
 
-    public String getStvaranjeSadrzaja() {
-        return stvaranjeSadrzaja;
+    public String getStvaranjeSadržaja() {
+        return stvaranjeSadržaja;
     }
 
-    public void setStvaranjeSadrzaja(String stvaranjeSadrzaja) {
-        this.stvaranjeSadrzaja = stvaranjeSadrzaja;
+    public void setStvaranjeSadržaja(String stvaranjeSadržaja) {
+        this.stvaranjeSadržaja = stvaranjeSadržaja;
     }
 
     public String getSigurnost() {
@@ -264,11 +268,11 @@ public class OsnovnaInformacija {
         this.sigurnost = sigurnost;
     }
 
-    public String getRjesavanjeProblema() {
-        return rjesavanjeProblema;
+    public String getRješavanjeProblema() {
+        return rješavanjeProblema;
     }
 
-    public void setRjesavanjeProblema(String rjesavanjeProblema) {
-        this.rjesavanjeProblema = rjesavanjeProblema;
+    public void setRješavanjeProblema(String rješavanjeProblema) {
+        this.rješavanjeProblema = rješavanjeProblema;
     }
 }

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ListaPodataka {
 
+
     public  OsnovnaInformacija  ucitajPodatkeIzDatoteke(){
 
         OsnovnaInformacija informacija=new OsnovnaInformacija();
@@ -21,8 +22,8 @@ public class ListaPodataka {
                 informacija.setAdresa(rastaviString(s.nextLine()));
                 informacija.setLinkovi(rastaviString(s.nextLine()));
                 informacija.setZvanje(rastaviString(s.nextLine()));
-                informacija.setDatumPocetka(rastaviString(s.nextLine()));
-                informacija.setDatumKraja(rastaviString(s.nextLine()));
+                informacija.setDatumPočetka(rastaviString(s.nextLine()));
+                informacija.setDatumZavršetka(rastaviString(s.nextLine()));
                 informacija.setTitula(rastaviString(s.nextLine()));
                 informacija.setMjesto(rastaviString(s.nextLine()));
                 informacija.setTehnikeZanimanja(rastaviString(s.nextLine()));
@@ -35,19 +36,19 @@ public class ListaPodataka {
 
                 informacija.setMaterinskiJezik(rastaviString(s.nextLine()));
                 informacija.setStraniJezici(rastaviString(s.nextLine()));
-                informacija.setSlusanje(rastaviString(s.nextLine()));
-                informacija.setCitanje(rastaviString(s.nextLine()));
+                informacija.setSlušanje(rastaviString(s.nextLine()));
+                informacija.setČitanje(rastaviString(s.nextLine()));
                 informacija.setGovornaInterakcija(rastaviString(s.nextLine()));
                 informacija.setGovornaProdukcija(rastaviString(s.nextLine()));
                 informacija.setPisanje(rastaviString(s.nextLine()));
 
-                informacija.setVjestina(rastaviString(s.nextLine()));
+                informacija.setVjestine(rastaviString(s.nextLine()));
 
-                informacija.setObradaInformacija(rastaviString(s.nextLine()));
+                informacija.setObrada(rastaviString(s.nextLine()));
                 informacija.setKomunikacija(rastaviString(s.nextLine()));
-                informacija.setStvaranjeSadrzaja(rastaviString(s.nextLine()));
+                informacija.setStvaranjeSadržaja(rastaviString(s.nextLine()));
                 informacija.setSigurnost(rastaviString(s.nextLine()));
-                informacija.setRjesavanjeProblema(rastaviString(s.nextLine()));
+                informacija.setRješavanjeProblema(rastaviString(s.nextLine()));
 
                 informacija.setOstaleVjestine(rastaviString(s.nextLine()));
 
@@ -62,14 +63,59 @@ public class ListaPodataka {
         return informacija;
     }
 
+   
 
 
 
     public  ArrayList<OsnovnaInformacija> dohvatiListu() {
+        ListaPodataka listaPodataka=new ListaPodataka();
         ArrayList<OsnovnaInformacija> objektis = new ArrayList<OsnovnaInformacija>();
-        objektis.add(ucitajPodatkeIzDatoteke());
+        OsnovnaInformacija informacija=listaPodataka.ucitajPodatkeIzDatoteke();
+
+        objektis.add(ucitajPodatke(informacija.getImePrezime(),informacija.getAdresa(),informacija.getBrojMobitela(),informacija.getEmailAdresa(),informacija.getLinkovi(),informacija.getZvanje(),informacija.getDatumPočetka(),informacija.getDatumZavršetka(),informacija.getTitula(),informacija.getMjesto(),informacija.getTehnikeZanimanja(),informacija.getDatumPocetka2(),informacija.getDatumKraja2(),informacija.getTitula2(),informacija.getMjesto2(),informacija.getTehnikeZanimanja2(),informacija.getOstaleVjestine(),informacija.getMaterinskiJezik(),
+                informacija.getStraniJezici(),informacija.getSlušanje(),informacija.getČitanje(),informacija.getGovornaInterakcija(),
+                informacija.getGovornaProdukcija(),informacija.getPisanje(),informacija.getVjestine(),informacija.getObrada(),informacija.getKomunikacija(),
+                informacija.getStvaranjeSadržaja(),informacija.getSigurnost(),informacija.getRješavanjeProblema(),informacija));
         return objektis;
 
+    }
+
+    private OsnovnaInformacija ucitajPodatke(String imePrezime,String adresa,String brojMobitela,String emailAdresa,String linkovi,String zvanje,String datumPočetka,String datumZavršetka,String titula,String mjesto,String tehnikeZanimanja,String datumPocetka2,String datumKraja2,String titula2,String mjesto2,String tehnikeZanimanja2,String ostaleVjestine,String materinskiJezik,String straniJezici,
+                                             String slušanje,String čitanje,String govornaInterakcija,String govornaProdukcija,
+                                             String pisanje,String vjestine,String obrada,String komunikacija,String stvaranjeSadržaja,String sigurnost,
+                                             String rješavanjeProblema,OsnovnaInformacija informacija){
+
+           informacija.setImePrezime(imePrezime);
+           informacija.setAdresa(adresa);
+           informacija.setBrojMobitela(brojMobitela);
+           informacija.setEmailAdresa(emailAdresa);
+           informacija.setLinkovi(linkovi);
+           informacija.setZvanje(zvanje);
+           informacija.setDatumPočetka(datumPočetka);
+           informacija.setDatumZavršetka(datumZavršetka);
+           informacija.setTitula(titula);
+           informacija.setMjesto(mjesto);
+           informacija.setTehnikeZanimanja(tehnikeZanimanja);
+           informacija.setDatumPocetka2(datumPocetka2);
+           informacija.setDatumKraja2(datumKraja2);
+           informacija.setTitula2(titula2);
+           informacija.setMjesto2(mjesto2);
+           informacija.setTehnikeZanimanja2(tehnikeZanimanja2);
+           informacija.setOstaleVjestine(ostaleVjestine);
+           informacija.setMaterinskiJezik(materinskiJezik);
+           informacija.setStraniJezici(straniJezici);
+           informacija.setSlušanje(slušanje);
+           informacija.setČitanje(čitanje);
+           informacija.setGovornaInterakcija(govornaInterakcija);
+           informacija.setGovornaProdukcija(govornaProdukcija);
+           informacija.setPisanje(pisanje);
+           informacija.setVjestine(vjestine);
+           informacija.setObrada(obrada);
+           informacija.setKomunikacija(komunikacija);
+           informacija.setStvaranjeSadržaja(stvaranjeSadržaja);
+           informacija.setSigurnost(sigurnost);
+           informacija.setRješavanjeProblema(rješavanjeProblema);
+           return  informacija;
     }
 
     public static String  rastaviString(String string){
