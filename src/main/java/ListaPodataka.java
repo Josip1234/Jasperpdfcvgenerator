@@ -63,7 +63,22 @@ public class ListaPodataka {
         return informacija;
     }
 
-   
+    public String formatirajString(String original){
+        String noviString="";
+
+        char razmak='-';
+        for (int i=0;i<original.length();i++){
+
+            if(original.charAt(i)==razmak){
+              noviString+="\n";
+              noviString+="-";
+
+            }else{
+                noviString+=original.charAt(i);
+            }
+        }
+        return noviString;
+    }
 
 
 

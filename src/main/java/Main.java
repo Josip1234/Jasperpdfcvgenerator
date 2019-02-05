@@ -32,7 +32,7 @@ public class Main {
         parameters.put("titula2",informacija.getTitula2());
         parameters.put("mjesto2",informacija.getMjesto2());
         parameters.put("tehnikeZanimanja2",informacija.getTehnikeZanimanja2());
-        parameters.put("ostaleVjestine",informacija.getOstaleVjestine());
+        parameters.put("ostaleVjestine",DataBeanList.formatirajString(informacija.getOstaleVjestine()));
         parameters.put("materinskiJezik",informacija.getMaterinskiJezik());
         parameters.put("straniJezici",informacija.getStraniJezici());
         parameters.put("slušanje",informacija.getSlušanje());
@@ -40,7 +40,7 @@ public class Main {
         parameters.put("govornaInterakcija",informacija.getGovornaInterakcija());
         parameters.put("govornaProdukcija",informacija.getGovornaProdukcija());
         parameters.put("pisanje",informacija.getPisanje());
-        parameters.put("vjestine",informacija.getVjestine());
+        parameters.put("vjestine",DataBeanList.formatirajString(informacija.getVjestine()));
         parameters.put("obrada",informacija.getObrada());
         parameters.put("komunikacija",informacija.getKomunikacija());
         parameters.put("stvaranjeSadržaja",informacija.getStvaranjeSadržaja());
@@ -51,11 +51,14 @@ public class Main {
             printFileName =  JasperFillManager.fillReportToFile(
                     sourceFileName, parameters, beanColDataSource);
             if(printFileName != null){
-                JasperPrintManager.printReport( printFileName, true);
+
+                JasperPrintManager.printReport( printFileName,true);
+
             }
         } catch (JRException e) {
             e.printStackTrace();
         }
+
     }
     }
 
