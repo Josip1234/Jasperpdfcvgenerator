@@ -29,7 +29,7 @@ public class ListaPodataka {
                 informacija.setTehnikeZanimanja(rastaviString(s.nextLine()));
 
                 informacija.setDatumPocetka2(rastaviString(s.nextLine()));
-                informacija.setDatumKraja2(rastaviString(s.nextLine()));
+                informacija.setDatumZavršetka2(rastaviString(s.nextLine()));
                 informacija.setTitula2(rastaviString(s.nextLine()));
                 informacija.setMjesto2(rastaviString(s.nextLine()));
                 informacija.setTehnikeZanimanja2(rastaviString(s.nextLine()));
@@ -72,7 +72,7 @@ public class ListaPodataka {
         ArrayList<OsnovnaInformacija> objektis = new ArrayList<OsnovnaInformacija>();
         OsnovnaInformacija informacija=listaPodataka.ucitajPodatkeIzDatoteke();
 
-        objektis.add(ucitajPodatke(informacija.getImePrezime(),informacija.getAdresa(),informacija.getBrojMobitela(),informacija.getEmailAdresa(),informacija.getLinkovi(),informacija.getZvanje(),informacija.getDatumPočetka(),informacija.getDatumZavršetka(),informacija.getTitula(),informacija.getMjesto(),informacija.getTehnikeZanimanja(),informacija.getDatumPocetka2(),informacija.getDatumKraja2(),informacija.getTitula2(),informacija.getMjesto2(),informacija.getTehnikeZanimanja2(),informacija.getOstaleVjestine(),informacija.getMaterinskiJezik(),
+        objektis.add(ucitajPodatke(informacija.getImePrezime(),informacija.getAdresa(),informacija.getBrojMobitela(),informacija.getEmailAdresa(),informacija.getLinkovi(),informacija.getZvanje(),informacija.getDatumPočetka(),informacija.getDatumZavršetka(),informacija.getTitula(),informacija.getMjesto(),informacija.getTehnikeZanimanja(),informacija.getDatumPocetka2(),informacija.getDatumZavršetka2(),informacija.getTitula2(),informacija.getMjesto2(),informacija.getTehnikeZanimanja2(),informacija.getOstaleVjestine(),informacija.getMaterinskiJezik(),
                 informacija.getStraniJezici(),informacija.getSlušanje(),informacija.getČitanje(),informacija.getGovornaInterakcija(),
                 informacija.getGovornaProdukcija(),informacija.getPisanje(),informacija.getVjestine(),informacija.getObrada(),informacija.getKomunikacija(),
                 informacija.getStvaranjeSadržaja(),informacija.getSigurnost(),informacija.getRješavanjeProblema(),informacija));
@@ -80,7 +80,7 @@ public class ListaPodataka {
 
     }
 
-    private OsnovnaInformacija ucitajPodatke(String imePrezime,String adresa,String brojMobitela,String emailAdresa,String linkovi,String zvanje,String datumPočetka,String datumZavršetka,String titula,String mjesto,String tehnikeZanimanja,String datumPocetka2,String datumKraja2,String titula2,String mjesto2,String tehnikeZanimanja2,String ostaleVjestine,String materinskiJezik,String straniJezici,
+    private OsnovnaInformacija ucitajPodatke(String imePrezime,String adresa,String brojMobitela,String emailAdresa,String linkovi,String zvanje,String datumPočetka,String datumZavršetka,String titula,String mjesto,String tehnikeZanimanja,String datumPocetka2,String datumZavršetka2,String titula2,String mjesto2,String tehnikeZanimanja2,String ostaleVjestine,String materinskiJezik,String straniJezici,
                                              String slušanje,String čitanje,String govornaInterakcija,String govornaProdukcija,
                                              String pisanje,String vjestine,String obrada,String komunikacija,String stvaranjeSadržaja,String sigurnost,
                                              String rješavanjeProblema,OsnovnaInformacija informacija){
@@ -97,7 +97,7 @@ public class ListaPodataka {
            informacija.setMjesto(mjesto);
            informacija.setTehnikeZanimanja(tehnikeZanimanja);
            informacija.setDatumPocetka2(datumPocetka2);
-           informacija.setDatumKraja2(datumKraja2);
+           informacija.setDatumZavršetka2(datumZavršetka2);
            informacija.setTitula2(titula2);
            informacija.setMjesto2(mjesto2);
            informacija.setTehnikeZanimanja2(tehnikeZanimanja2);

@@ -11,7 +11,7 @@ public class OsnovnaInformacija {
     private String mjesto;
     private String tehnikeZanimanja;
     private String datumPocetka2;
-    private String datumKraja2;
+    private String datumZavršetka2;
     private String titula2;
     private String mjesto2;
     private String tehnikeZanimanja2;
@@ -47,12 +47,12 @@ public class OsnovnaInformacija {
         this.datumPocetka2 = datumPocetka2;
     }
 
-    public String getDatumKraja2() {
-        return datumKraja2;
+    public String getDatumZavršetka2() {
+        return datumZavršetka2;
     }
 
-    public void setDatumKraja2(String datumKraja2) {
-        this.datumKraja2 = datumKraja2;
+    public void setDatumZavršetka2(String datumZavršetka2) {
+        this.datumZavršetka2 = datumZavršetka2;
     }
 
     public String getTitula2() {

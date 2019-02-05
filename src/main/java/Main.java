@@ -28,7 +28,7 @@ public class Main {
         parameters.put("mjesto",informacija.getMjesto());
         parameters.put("tehnikeZanimanja",informacija.getTehnikeZanimanja());
         parameters.put("datumPočetka2",informacija.getDatumPocetka2());
-        parameters.put("datumKraja2",informacija.getDatumKraja2());
+        parameters.put("datumZavršetka2",informacija.getDatumZavršetka2());
         parameters.put("titula2",informacija.getTitula2());
         parameters.put("mjesto2",informacija.getMjesto2());
         parameters.put("tehnikeZanimanja2",informacija.getTehnikeZanimanja2());
@@ -46,6 +46,7 @@ public class Main {
         parameters.put("stvaranjeSadržaja",informacija.getStvaranjeSadržaja());
         parameters.put("sigurnost",informacija.getSigurnost());
         parameters.put("rješavanjeProblema",informacija.getRješavanjeProblema());
+
         try {
             printFileName =  JasperFillManager.fillReportToFile(
                     sourceFileName, parameters, beanColDataSource);
