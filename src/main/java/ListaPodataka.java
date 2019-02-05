@@ -11,7 +11,7 @@ public class ListaPodataka {
 
 
         try {
-            Scanner s = new Scanner(new File("properties.config"));
+            Scanner s = new Scanner(new File("properties.conf"));
 
 
             while (s.hasNextLine()) {
