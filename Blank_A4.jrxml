@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="72bd3300-fd1a-4076-963e-37ac0478c836">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryNewPage="true" uuid="72bd3300-fd1a-4076-963e-37ac0478c836">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
@@ -286,10 +286,10 @@ NzFmNGY4MmRkOWVjOw==]]>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="225" splitType="Stretch">
+		<band height="225" splitType="Immediate">
 			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 			<textField pattern="d/MM/yyyy" isBlankWhenNull="true">
-				<reportElement x="48" y="0" width="75" height="30" forecolor="#0E4194" uuid="5c30a5a9-7e24-4922-8ae0-3929c0a4a377">
+				<reportElement x="48" y="0" width="75" height="30" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="5c30a5a9-7e24-4922-8ae0-3929c0a4a377">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2b5b82b6-ce7b-4411-ae40-75edb40fc7e0"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -298,7 +298,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{datumPočetka}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="93" y="0" width="5" height="30" forecolor="#0E4194" uuid="2ed3d01e-9997-4642-86b8-dba4dcf46c5f">
+				<reportElement x="93" y="0" width="5" height="30" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="2ed3d01e-9997-4642-86b8-dba4dcf46c5f">
 					<property name="com.jaspersoft.studio.element.name" value="-"/>
 				</reportElement>
 				<textElement>
@@ -307,7 +307,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<text><![CDATA[-]]></text>
 			</staticText>
 			<textField pattern="d/MM/yyyy" isBlankWhenNull="true">
-				<reportElement x="95" y="0" width="84" height="30" forecolor="#0E4194" uuid="8367583d-4ac9-4143-9ba4-5cc8101fcc28">
+				<reportElement x="95" y="0" width="84" height="30" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="8367583d-4ac9-4143-9ba4-5cc8101fcc28">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d9d14a1-0bf8-4c50-9137-57a567afbf35"/>
 				</reportElement>
 				<textElement>
@@ -316,7 +316,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{datumZavršetka}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="164" y="0" width="316" height="30" forecolor="#0E4194" uuid="7fba5907-3054-4550-8c1e-c820e7bf5eca">
+				<reportElement x="164" y="0" width="316" height="30" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="7fba5907-3054-4550-8c1e-c820e7bf5eca">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="691f6123-ab12-48f0-afbe-d5623dc29ce1"/>
 				</reportElement>
 				<textElement>
@@ -325,7 +325,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{titula}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="161" y="30" width="315" height="44" uuid="a27bdec9-f7ed-49ec-8a68-a40aa66a8ce0">
+				<reportElement x="161" y="30" width="315" height="44" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="a27bdec9-f7ed-49ec-8a68-a40aa66a8ce0">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c7089f1c-e48e-40e3-8939-c2ec6986af5f"/>
 				</reportElement>
 				<textElement>
@@ -334,7 +334,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{mjesto}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="161" y="50" width="407" height="59" uuid="e625e85c-e6d6-452e-8588-7364ab95fc28">
+				<reportElement x="161" y="50" width="407" height="59" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="e625e85c-e6d6-452e-8588-7364ab95fc28">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f880bf03-f1af-4dce-9c12-5d0c5f4b0a64"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -343,7 +343,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{tehnikeZanimanja}]]></textFieldExpression>
 			</textField>
 			<textField pattern="d/MM/yyyy" isBlankWhenNull="true">
-				<reportElement x="48" y="110" width="67" height="40" forecolor="#0E4194" uuid="217a3b91-941c-486c-b12c-c2f9d7465cd4">
+				<reportElement x="48" y="110" width="67" height="40" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="217a3b91-941c-486c-b12c-c2f9d7465cd4">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2b5b82b6-ce7b-4411-ae40-75edb40fc7e0"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -352,7 +352,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{datumPočetka2}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="93" y="110" width="5" height="40" forecolor="#0E4194" uuid="57f90ccd-6b16-4c63-abf2-aee160eabd32">
+				<reportElement x="93" y="110" width="5" height="40" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="57f90ccd-6b16-4c63-abf2-aee160eabd32">
 					<property name="com.jaspersoft.studio.element.name" value="-"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -361,7 +361,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<text><![CDATA[-]]></text>
 			</staticText>
 			<textField pattern="d/MM/yyyy" isBlankWhenNull="true">
-				<reportElement x="95" y="110" width="84" height="40" forecolor="#0E4194" uuid="ac8cbcad-0c84-4f76-9ea2-2514884a6e12">
+				<reportElement x="95" y="110" width="84" height="40" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="ac8cbcad-0c84-4f76-9ea2-2514884a6e12">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d9d14a1-0bf8-4c50-9137-57a567afbf35"/>
 				</reportElement>
 				<textElement>
@@ -370,7 +370,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{datumZavršetka2}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="160" y="110" width="316" height="40" forecolor="#0E4194" uuid="af2aa6de-6b60-405e-9599-81ef4847435f">
+				<reportElement x="160" y="110" width="316" height="40" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="af2aa6de-6b60-405e-9599-81ef4847435f">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="691f6123-ab12-48f0-afbe-d5623dc29ce1"/>
 				</reportElement>
 				<textElement>
@@ -379,7 +379,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{titula2}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="158" y="130" width="315" height="40" uuid="23b4009e-74c6-457d-9bdc-88ddd4eef5d5">
+				<reportElement x="158" y="130" width="315" height="40" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="23b4009e-74c6-457d-9bdc-88ddd4eef5d5">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c7089f1c-e48e-40e3-8939-c2ec6986af5f"/>
 				</reportElement>
 				<textElement>
@@ -388,7 +388,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{mjesto2}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="159" y="150" width="407" height="69" uuid="61f0f94c-f198-4011-aaa3-ae15245f06bb">
+				<reportElement x="159" y="150" width="407" height="69" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="61f0f94c-f198-4011-aaa3-ae15245f06bb">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f880bf03-f1af-4dce-9c12-5d0c5f4b0a64"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -690,7 +690,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<text><![CDATA[Komunikacijske vještine]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="164" y="200" width="364" height="30" uuid="6c0f7372-9bdb-46ab-999b-d06b6c93305b"/>
+				<reportElement x="164" y="200" width="364" height="50" uuid="6c0f7372-9bdb-46ab-999b-d06b6c93305b"/>
 				<textElement markup="styled">
 					<font fontName="Arial" size="9"/>
 					<paragraph lineSpacing="1_1_2"/>
@@ -711,7 +711,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<text><![CDATA[Digitalne vještine]]></text>
 			</staticText>
 			<componentElement>
-				<reportElement x="156" y="0" width="380" height="103" uuid="3864c64e-4bdf-496d-ac89-677be1b0c998">
+				<reportElement x="156" y="0" width="380" height="80" uuid="3864c64e-4bdf-496d-ac89-677be1b0c998">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 6_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 6_CH"/>
@@ -950,7 +950,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 		</band>
 	</pageFooter>
 	<summary>
-		<band height="197" splitType="Stretch">
+		<band height="290" splitType="Stretch">
 			<staticText>
 				<reportElement x="180" y="0" width="271" height="29" uuid="77d410c0-e8f6-4e9d-a03d-1663e0e03718"/>
 				<textElement>
@@ -968,7 +968,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<text><![CDATA[Ostale vještine]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="181" y="40" width="70" height="156" uuid="eec25df2-f03e-4e1e-81ce-31ce2069c98d"/>
+				<reportElement x="181" y="40" width="129" height="250" uuid="eec25df2-f03e-4e1e-81ce-31ce2069c98d"/>
 				<textElement textAlignment="Left">
 					<font fontName="Arial" size="9"/>
 				</textElement>
