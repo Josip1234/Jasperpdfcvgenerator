@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryNewPage="true" uuid="72bd3300-fd1a-4076-963e-37ac0478c836">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="72bd3300-fd1a-4076-963e-37ac0478c836">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="net.sf.jasperreports.print.create.bookmarks" value="false"/>
 	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
 		<box>
 			<topPen lineWidth="0.5" lineColor="#C6C6C6"/>
@@ -210,7 +211,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="135" splitType="Stretch">
+		<band height="114" splitType="Stretch">
 			<staticText>
 				<reportElement x="20" y="0" width="130" height="30" forecolor="#0E4194" uuid="6a1191f9-8587-48bb-966a-60f00ca43428"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -257,7 +258,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="66" splitType="Stretch">
+		<band height="68" splitType="Stretch">
 			<staticText>
 				<reportElement x="21" y="0" width="114" height="30" forecolor="#0E4194" uuid="f7dc940a-2cc0-4916-adbb-bbfd42bd0433">
 					<property name="com.jaspersoft.studio.element.name" value="ZVANJE"/>
@@ -286,7 +287,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="225" splitType="Immediate">
+		<band height="200" splitType="Immediate">
 			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 			<textField pattern="d/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="48" y="0" width="75" height="30" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="5c30a5a9-7e24-4922-8ae0-3929c0a4a377">
@@ -316,7 +317,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{datumZavršetka}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="164" y="0" width="316" height="30" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="7fba5907-3054-4550-8c1e-c820e7bf5eca">
+				<reportElement x="164" y="0" width="316" height="19" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="7fba5907-3054-4550-8c1e-c820e7bf5eca">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="691f6123-ab12-48f0-afbe-d5623dc29ce1"/>
 				</reportElement>
 				<textElement>
@@ -325,7 +326,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{titula}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="161" y="30" width="315" height="44" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="a27bdec9-f7ed-49ec-8a68-a40aa66a8ce0">
+				<reportElement x="161" y="19" width="315" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="a27bdec9-f7ed-49ec-8a68-a40aa66a8ce0">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c7089f1c-e48e-40e3-8939-c2ec6986af5f"/>
 				</reportElement>
 				<textElement>
@@ -334,7 +335,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{mjesto}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="161" y="50" width="407" height="59" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="e625e85c-e6d6-452e-8588-7364ab95fc28">
+				<reportElement x="159" y="39" width="407" height="59" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="e625e85c-e6d6-452e-8588-7364ab95fc28">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f880bf03-f1af-4dce-9c12-5d0c5f4b0a64"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -343,7 +344,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{tehnikeZanimanja}]]></textFieldExpression>
 			</textField>
 			<textField pattern="d/MM/yyyy" isBlankWhenNull="true">
-				<reportElement x="48" y="110" width="67" height="40" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="217a3b91-941c-486c-b12c-c2f9d7465cd4">
+				<reportElement x="48" y="100" width="67" height="31" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="217a3b91-941c-486c-b12c-c2f9d7465cd4">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2b5b82b6-ce7b-4411-ae40-75edb40fc7e0"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -352,7 +353,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{datumPočetka2}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="93" y="110" width="5" height="40" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="57f90ccd-6b16-4c63-abf2-aee160eabd32">
+				<reportElement x="93" y="100" width="5" height="31" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="57f90ccd-6b16-4c63-abf2-aee160eabd32">
 					<property name="com.jaspersoft.studio.element.name" value="-"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -361,7 +362,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<text><![CDATA[-]]></text>
 			</staticText>
 			<textField pattern="d/MM/yyyy" isBlankWhenNull="true">
-				<reportElement x="95" y="110" width="84" height="40" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="ac8cbcad-0c84-4f76-9ea2-2514884a6e12">
+				<reportElement x="95" y="100" width="84" height="31" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="ac8cbcad-0c84-4f76-9ea2-2514884a6e12">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d9d14a1-0bf8-4c50-9137-57a567afbf35"/>
 				</reportElement>
 				<textElement>
@@ -370,7 +371,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{datumZavršetka2}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="160" y="110" width="316" height="40" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="af2aa6de-6b60-405e-9599-81ef4847435f">
+				<reportElement x="160" y="100" width="316" height="31" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#0E4194" uuid="af2aa6de-6b60-405e-9599-81ef4847435f">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="691f6123-ab12-48f0-afbe-d5623dc29ce1"/>
 				</reportElement>
 				<textElement>
@@ -379,7 +380,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{titula2}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="158" y="130" width="315" height="40" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="23b4009e-74c6-457d-9bdc-88ddd4eef5d5">
+				<reportElement x="158" y="120" width="315" height="31" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="23b4009e-74c6-457d-9bdc-88ddd4eef5d5">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c7089f1c-e48e-40e3-8939-c2ec6986af5f"/>
 				</reportElement>
 				<textElement>
@@ -388,7 +389,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<textFieldExpression><![CDATA[$P{mjesto2}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="159" y="150" width="407" height="69" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="61f0f94c-f198-4011-aaa3-ae15245f06bb">
+				<reportElement x="159" y="140" width="407" height="60" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="61f0f94c-f198-4011-aaa3-ae15245f06bb">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f880bf03-f1af-4dce-9c12-5d0c5f4b0a64"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -460,7 +461,7 @@ NzFmNGY4MmRkOWVjOw==]]>
 				<text><![CDATA[Zajednički europski referentni okvir za jezike]]></text>
 			</staticText>
 			<componentElement>
-				<reportElement x="163" y="55" width="387" height="110" uuid="50de40b1-f3ec-4d98-be04-3a200d335af6">
+				<reportElement x="163" y="55" width="387" height="64" uuid="50de40b1-f3ec-4d98-be04-3a200d335af6">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 5_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 5_CH"/>
