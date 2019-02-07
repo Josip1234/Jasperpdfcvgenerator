@@ -1,3 +1,5 @@
+package com.neusys.app;
+
 public class OsnovnaInformacija {
     private String imePrezime;
     private String adresa;

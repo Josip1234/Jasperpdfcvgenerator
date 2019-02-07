@@ -1,3 +1,7 @@
+package com.neusys.app;
+
+import com.neusys.app.ListaPodataka;
+import com.neusys.app.OsnovnaInformacija;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 

@@ -1,3 +1,5 @@
+package com.neusys.app;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -5,7 +7,7 @@ import java.util.Scanner;
 public class ListaPodataka {
 
 
-    public  OsnovnaInformacija  ucitajPodatkeIzDatoteke(){
+    public OsnovnaInformacija ucitajPodatkeIzDatoteke(){
 
         OsnovnaInformacija informacija=new OsnovnaInformacija();
 
@@ -95,10 +97,10 @@ public class ListaPodataka {
 
     }
 
-    private OsnovnaInformacija ucitajPodatke(String imePrezime,String adresa,String brojMobitela,String emailAdresa,String linkovi,String zvanje,String datumPočetka,String datumZavršetka,String titula,String mjesto,String tehnikeZanimanja,String datumPocetka2,String datumZavršetka2,String titula2,String mjesto2,String tehnikeZanimanja2,String ostaleVjestine,String materinskiJezik,String straniJezici,
-                                             String slušanje,String čitanje,String govornaInterakcija,String govornaProdukcija,
-                                             String pisanje,String vjestine,String obrada,String komunikacija,String stvaranjeSadržaja,String sigurnost,
-                                             String rješavanjeProblema,OsnovnaInformacija informacija){
+    private OsnovnaInformacija ucitajPodatke(String imePrezime, String adresa, String brojMobitela, String emailAdresa, String linkovi, String zvanje, String datumPočetka, String datumZavršetka, String titula, String mjesto, String tehnikeZanimanja, String datumPocetka2, String datumZavršetka2, String titula2, String mjesto2, String tehnikeZanimanja2, String ostaleVjestine, String materinskiJezik, String straniJezici,
+                                             String slušanje, String čitanje, String govornaInterakcija, String govornaProdukcija,
+                                             String pisanje, String vjestine, String obrada, String komunikacija, String stvaranjeSadržaja, String sigurnost,
+                                             String rješavanjeProblema, OsnovnaInformacija informacija){
 
            informacija.setImePrezime(imePrezime);
            informacija.setAdresa(adresa);

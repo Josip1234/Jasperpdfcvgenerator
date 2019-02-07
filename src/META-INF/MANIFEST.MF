@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Class-Path: castor-xml-1.4.1.jar spring-core-4.2.5.RELEASE.jar commons
+ -collections4-4.1.jar jasperreports-6.7.0.jar log4j-core-2.11.1.jar j
+ freechart-1.5.0.jar spring-aop-4.2.5.RELEASE.jar commons-logging-1.2.
+ jar itext-2.1.7.js6.jar aopalliance-1.0.jar spring-beans-4.2.5.RELEAS
+ E.jar jasperreports-fonts-6.0.0.jar spring-expression-4.2.5.RELEASE.j
+ ar commons-collections-3.2.2.jar itextpdf-5.5.6.jar commons-digester-
+ 2.1.jar jackson-core-2.9.8.jar commons-beanutils-1.9.3.jar spring-con
+ text-4.2.5.RELEASE.jar jackson-databind-2.9.8.jar icu4j-63.1.jar java
+ x.inject-1.jar log4j-api-2.11.1.jar log4j-jcl-2.11.1.jar ecj-4.6.1.ja
+ r commons-lang3-3.4.jar castor-core-1.4.1.jar bcprov-jdk15on-1.52.jar
+  jcommon-1.0.24.jar jackson-annotations-2.9.8.jar
+Main-Class: com.neusys.app.Main
+
