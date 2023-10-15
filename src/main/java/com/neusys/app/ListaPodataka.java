@@ -66,6 +66,7 @@ public class ListaPodataka {
     }
 
     public String formatirajString(String original){
+    	System.out.println(original);
         String noviString="";
 
         char razmak='-';
