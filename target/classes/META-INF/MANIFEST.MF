@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: Korisnik
+Build-Jdk: 17
+Main-Class: com.neusys.app.Main
+Created-By: Maven Integration for Eclipse
+

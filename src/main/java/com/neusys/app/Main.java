@@ -19,7 +19,7 @@ public class Main {
         JRBeanCollectionDataSource beanColDataSource = new
                 JRBeanCollectionDataSource(dataList);
 
-        Map parameters = new HashMap();
+        Map<String, Object> parameters = new HashMap();
         parameters.put("imePrezime",informacija.getImePrezime());
         parameters.put("adresa",informacija.getAdresa());
         parameters.put("brojMobitela",informacija.getBrojMobitela());
