@@ -19,10 +19,16 @@ public class Ispis {
         String printFileName = null;
 
 
-        Map<String, String> parameters = new HashMap<String, String>();
+        Map<String, Object> parameters = new HashMap<String, Object>();
     
        parameters.put("Broj_paketa", "TP10060343918");
-
+       try {
+    	 JasperFillManager.fillReport(sourceFileName, parameters);
+		   JasperPrintManager.printReport(sourceFileName, false);
+	} catch (JRException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
   
 
     }
