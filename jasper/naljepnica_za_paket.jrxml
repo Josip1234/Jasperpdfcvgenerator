@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="naljepnica_za_paket" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="17b7c7e8-88d2-43dc-8019-c26debd05de2">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<variable name="Broj_paketa" class="java.lang.String"/>
+	<variable name="težina" class="java.lang.String"/>
+	<variable name="rok_dostave" class="java.lang.String"/>
+	<variable name="Grad" class="java.lang.String"/>
+	<variable name="Relacija" class="java.lang.String"/>
+	<variable name="Adresa" class="java.lang.String"/>
+	<variable name="datum_vrijeme" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<textField>
+				<reportElement x="100" y="0" width="180" height="50" uuid="dc14fd5f-a898-4960-bd09-7d870ec8a635"/>
+				<textFieldExpression><![CDATA[$V{Broj_paketa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="130" height="50" uuid="5e1416fb-2ad4-4a62-819a-d0dd1371ce25"/>
+				<textFieldExpression><![CDATA[$V{težina}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="50" width="130" height="55" uuid="6bbc61d3-383a-4486-a8d1-c1ad1e733f5c"/>
+				<textFieldExpression><![CDATA[$V{rok_dostave}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="56" splitType="Stretch">
+			<staticText>
+				<reportElement key="" x="100" y="0" width="190" height="56" uuid="a4e9ee5b-a211-4777-98c3-d673453e979a"/>
+				<textElement>
+					<font fontName="Arial Black" size="22"/>
+				</textElement>
+				<text><![CDATA[Makro:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="290" y="10" width="490" height="46" uuid="23e4b93c-5439-470d-a974-7bf82f3abdd1"/>
+				<textFieldExpression><![CDATA[$V{Grad}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="68" splitType="Stretch">
+			<textField>
+				<reportElement x="100" y="0" width="550" height="68" uuid="a5d0030b-47b7-4f7e-8747-d82a46e5ae5f"/>
+				<textElement>
+					<font fontName="Arial Black" size="26"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{Grad}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="135" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="0" width="190" height="50" uuid="b1745136-3994-4502-90fe-fdfcb23bba3a"/>
+				<textElement>
+					<font fontName="Arial Black" size="22"/>
+				</textElement>
+				<text><![CDATA[Mikro:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="290" y="10" width="290" height="50" uuid="e43c60a2-7d46-47a3-afef-c5df5268f301"/>
+				<textFieldExpression><![CDATA[$V{Relacija}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="50" width="80" height="41" uuid="d97c5843-92a0-4d62-9b6d-dcadc6f393f7"/>
+				<textElement>
+					<font fontName="Arial Black" size="22"/>
+				</textElement>
+				<text><![CDATA[2:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="60" width="400" height="31" uuid="32e82683-2a7c-43e1-995a-2d0ee3ae9eb5"/>
+				<textFieldExpression><![CDATA[$V{Adresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="101" width="81" height="31" uuid="4cbd19de-a8c4-4467-9e36-9ad625e69b21"/>
+				<text><![CDATA[PO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="100" width="300" height="30" uuid="146f1586-0583-4f4f-977c-30b2c54a3c2a"/>
+				<textFieldExpression><![CDATA[$V{datum_vrijeme}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="490" y="101" width="181" height="31" uuid="d52fd516-034f-4c37-a631-a3ccf8d736f2"/>
+				<textElement>
+					<font fontName="Arial Black" size="20"/>
+				</textElement>
+				<text><![CDATA[TISAK plus d.o.o.]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
